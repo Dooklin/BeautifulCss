@@ -1,0 +1,64 @@
+body {
+    background-color: pink;
+}
+
+header {
+    display: flex;
+    justify-content: space-around;
+}
+
+nav {
+    width: 100vw;
+    width: 100%;
+    display: flex;
+
+    align-items: center;
+}
+
+
+.menu-items {
+    text-decoration: none;
+    font-size: larger;
+    color: black;
+    height: min-content;
+
+    font-size: 1.5em;
+    transition: opacity 400ms ease;
+    transition: font-size 400ms ease;
+}
+
+#menu {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#menu:hover > .menu-items {
+    opacity: 0.4;
+}
+
+#menu:hover > .menu-items:hover {
+    opacity: 1;
+    font-size: 2em;
+}
+
+footer {
+    position: fixed;
+    height: 7%;
+    left: 0%;
+    bottom: 0%;
+    width: 100%;
+    background-color: purple;
+
+
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.footer-items {
+    color: black;
+    text-decoration: none;
+    font-size: 1.2em;
+}
