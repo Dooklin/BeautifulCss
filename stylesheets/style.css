@@ -1,0 +1,34 @@
+@keyframes pan {
+    0% {
+        background-position: 0% 0%;
+    }
+    100% {
+        background-position: 100% 0%;
+    }
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    background-color: rgb(18, 18, 18);
+    background-image: url("../star.png");
+    background-repeat: repeat;
+    background-size: 100px 100px;
+    animation: pan 180s linear infinite;
+}
+
+#seal {
+    width: 200px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#seal:hover {
+    transform: rotate(360deg);
+    transition: transform 2s ease;
+}
