@@ -1,0 +1,14 @@
+body {
+    background-color: pink;
+}
+
+nav {
+    width: 100vw;
+    display: flex;
+
+    justify-content: space-around;
+}
+
+.menu-items {
+    text-decoration: none;
+}
