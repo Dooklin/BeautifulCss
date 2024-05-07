@@ -13,10 +13,19 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: url("../star.png");
+    background-image: url("../Starr.png");
     background-repeat: repeat;
     background-size: 100px 100px;
     animation: pan 180s linear infinite;
+}
+
+#gradientSide{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to right, black, rgba(0, 0, 0, 0), black); 
 }
 
 body {
@@ -40,4 +49,8 @@ body {
 #seal:hover {
     transform: rotate(360deg);
     transition: transform 2s ease;
+}
+
+#secretSite{
+    margin-bottom: 300px;
 }
