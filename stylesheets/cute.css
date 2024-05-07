@@ -2,7 +2,6 @@ body {
     background-color: pink;
     margin: 0;
     padding: 0;
-    z-overflow: scroll;
 }
 
 header {
@@ -51,8 +50,8 @@ nav {
 }
 
 footer {
-    position: fixed;
-    height: 7%;
+    position:fixed;
+    height: 3vh;
     left: 0%;
     bottom: 0%;
     width: 100%;
@@ -62,6 +61,8 @@ footer {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+
+    opacity: 0.9;
 
 }
 
@@ -81,6 +82,8 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
+
+    margin-bottom: 7%;
 }
 
 #heading {
@@ -89,8 +92,61 @@ main {
 
 #image {
     max-width: 80vw;
+    margin-bottom: 100px;
 }
 
 #buttons {
+    width: 40vw;
     display: flex;
+    justify-content: space-around;
+
+    margin-bottom: 50px;
+}
+
+button {
+    height: 100px;
+    width: 100px;
+
+    border-radius: 100%;
+    border: none;
+
+    font-size: 1.5em;
+}
+
+#smash {
+    background-color: green;
+}
+#pass {
+    background-color: rgb(218, 11, 11);
+}
+
+#smash:active {
+    background-color: rgb(5, 151, 5);
+}
+
+#pass:active {
+    background-color: rgb(253, 32, 32);
+}
+
+li {
+    list-style: none;
+}
+
+#result {
+    display: flex;
+    flex-direction: column;
+}
+
+#ab_win {
+    font-size: 1.5em;
+    text-align: center;
+}
+.w {
+    color: green;
+}
+.l {
+    color: red;
+}
+.d {
+    color: gray;
 }
