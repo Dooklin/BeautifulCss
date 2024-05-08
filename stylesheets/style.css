@@ -25,7 +25,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background: linear-gradient(to right, black, rgba(0, 0, 0, 0), black); 
+    background: radial-gradient(rgba(0, 0, 0, 0), black); 
 }
 
 body {
