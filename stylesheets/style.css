@@ -44,12 +44,12 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    transition: transform 2s ease-in-out;
+    transition: transform 200s ease;
     z-index: 1;
 }
 
 #seal:hover {
-    transform: rotate(360deg);
+    transform: rotate(36000deg);
     
 }
 
