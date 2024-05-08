@@ -44,9 +44,59 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    transition: transform 2s ease-in-out;
+    z-index: 1;
 }
 
 #seal:hover {
     transform: rotate(360deg);
-    transition: transform 2s ease;
+    
+}
+
+#burgerMenu{
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    z-index: 4;
+    position: fixed;
+    top: 20px;
+    right: 20px;
+}
+
+#burgerMenu:hover{
+    background-color: aliceblue;
+}
+
+#stripe1{
+    display: flex;
+    position: fixed;
+    top: 20px;
+    width: 50px;
+    height: 10px;
+
+    border-radius: 10px;
+    background-color: rgb(44, 44, 44);
+}
+
+#stripe2{
+    display: flex;
+    position: fixed;
+    top: 35px;
+    width: 50px;
+    height: 10px;
+
+    background-color: rgb(44, 44, 44);
+    border-radius: 10px;
+}
+
+#stripe3{
+    display: flex;
+    position: fixed;
+    top: 50px;
+    width: 50px;
+    height: 10px;
+
+    background-color: rgb(44, 44, 44);
+    border-radius: 10px;
 }
