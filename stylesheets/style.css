@@ -34,6 +34,8 @@ body {
     align-items: center;
     min-height: 100vh;
     margin: 0;
+
+    font-family: "Yu Gothic Light";
     
     background-color: rgb(18, 18, 18);
 }
@@ -65,38 +67,65 @@ body {
 }
 
 #burgerMenu:hover{
-    background-color: aliceblue;
+    #stripe1{
+        background-color: rgb(255, 255, 255);
+        transform: rotate(45deg);
+        margin-top: 15px;
+    }
+
+    #stripe2{
+        background-color: rgba(0, 0, 0, 0);
+    }
+
+    #stripe3{
+        background-color: rgb(255, 255, 255);
+        transform: rotate(-45deg);
+        margin-top: -15px;
+    }
+    #burgerItem1, #burgerItem2, #burgerItem3 {
+        background-color: rgb(44, 44, 44);
+        opacity: 100;
+    }
 }
 
-#stripe1{
+#stripe1, #stripe2, #stripe3 {
     display: flex;
+    width: 50px;
+    height: 10px;
+    background-color: rgb(44, 44, 44);
+    border-radius: 10px;
     position: fixed;
+    transition: transform 0.5s ease-in-out, margin-top 0.5s ease-in-out, background-color 0.5s ease-in-out;
+}
+
+#stripe1 {
     top: 20px;
-    width: 50px;
-    height: 10px;
-
-    border-radius: 10px;
-    background-color: rgb(44, 44, 44);
 }
 
-#stripe2{
-    display: flex;
-    position: fixed;
+#stripe2 {
     top: 35px;
-    width: 50px;
-    height: 10px;
-
-    background-color: rgb(44, 44, 44);
-    border-radius: 10px;
 }
 
-#stripe3{
-    display: flex;
-    position: fixed;
+#stripe3 {
     top: 50px;
-    width: 50px;
-    height: 10px;
+}
 
-    background-color: rgb(44, 44, 44);
-    border-radius: 10px;
+#burgerItem1, #burgerItem2, #burgerItem3 {
+    width: 50px;
+    height: 25px;
+    position: fixed;
+    margin-left: -10px;
+    opacity: 0;
+}
+
+#burgerItem1{
+    top: 70px;
+}
+
+#burgerItem2{
+    top: 90px;
+}
+
+#burgerItem3{
+    top: 110px;
 }
