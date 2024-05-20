@@ -67,8 +67,8 @@ function showResult()
     });
     result.innerHTML += "</ul>";
 
-    if (score > 0) result.innerHTML += "<br><b id='ab_win' class='w'>WIN</b>";
-    else if (score < 0) result.innerHTML += "<br><b id='ab_win' class='l'>LOOSE</b>";
+    if (score > 0) result.innerHTML += "<br><b id='ab_win' class='w'><a href='hell.html'>WIN</a></b>";
+    else if (score < 0) result.innerHTML += "<br><b id='ab_win' class='l'><a href='epic.html'>LOOSE</a></b>";
     else result.innerHTML += "<br><b id='ab_win' class='d'>DRAW</b>";
 
     smashbtn.remove();

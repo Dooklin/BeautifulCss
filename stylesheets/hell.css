@@ -1,0 +1,44 @@
+body {
+    background-color: #630000;
+    width: 100vw;
+    height: 100vh;
+
+    overflow: hidden;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#text {
+    color: rgb(255, 255, 255);
+}
+#dec {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.choice {
+    border: none;
+    width: 5vw;
+    height: 5vw;
+    border-radius: 10%;
+
+    transition: opacity 3s ease;
+}
+
+#n:hover + #y {
+    opacity: 0;
+}
+#y:hover + #n {
+    opacity: 0;
+}
+
+
+#y {
+    background-color: rgb(25, 94, 48);
+}
+#n {
+    background-color: rgb(247, 50, 50);
+}
