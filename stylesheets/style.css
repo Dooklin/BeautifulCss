@@ -7,6 +7,19 @@
     }
 }
 
+@keyframes fall {
+    0% {
+        transform: translate(0px, 0px) rotateZ(45deg) scale(1.5);
+        
+        opacity: 1;
+    }
+    100% {
+        transform: translate(0px, 200px) rotateZ(-45deg) scale(0.25);
+        opacity: 0;
+    }
+}
+
+
 #repeatingImg {
     width: 100%;
     height: 100vh;
@@ -128,4 +141,15 @@ body {
 
 #burgerItem3{
     top: 110px;
+}
+
+.star {
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    background-image: url('/images/star.svg');
+    background-size: cover;
+    pointer-events: none;
+
+    animation: fall 1.2s infinite ease-in-out;
 }
