@@ -1,0 +1,36 @@
+html {
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+
+*::-webkit-scrollbar {
+    display: none;
+}
+
+body {
+    background-color: rgba(76, 43, 60, 0.8);
+
+    overflow-x: hidden;
+
+    background-image: url('../images/boy.png');
+    background-position: bottom center;
+    background-repeat: no-repeat;
+
+}
+
+h1 {
+    width: 100vw;
+    text-align: center;
+}
+
+#hole {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    margin-bottom: 800px;
+}
+
+#hole > p {
+    margin: 200px;
+}

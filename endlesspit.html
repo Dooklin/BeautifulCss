@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Endless Pit</title>
+
+    <link rel="stylesheet" href="stylesheets/endlesspit.css">
+</head>
+<body>
+    <h1>This is the (not so) endless pit</h1>
+
+    <div id="hole">
+
+    </div>
+
+    <script>
+        function percent(num, max) {
+            return ((num / max) * 100).toFixed(2);
+        }
+
+        let container = document.getElementById('hole');
+        let n = 1000;
+
+        for (let i = 1; i <= n; i++) {
+            container.innerHTML += `<p>${percent(i, n)}%</p>`
+        }
+
+        container.innerHTML += "<h1>Yay you did it</h1>";
+
+
+    </script>
+</body>
+</html>
